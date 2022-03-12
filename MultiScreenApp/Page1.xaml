@@ -1,0 +1,31 @@
+﻿<Page x:Class="MultiScreenApp.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MultiScreenApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid>
+        <Ellipse HorizontalAlignment="Center" Height="304" Stroke="Black" VerticalAlignment="Center" Width="304">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF002CAA" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label Content="Page 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Ink Free" FontSize="72">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF313131" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button Content="Next &gt;&gt;" HorizontalAlignment="Left" Margin="595,0,0,0" VerticalAlignment="Center" FontSize="22" Height="55" Width="148" Click="next_page"/>
+
+    </Grid>
+</Page>
